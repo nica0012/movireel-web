@@ -241,6 +241,15 @@ a3a4a4 - mid gray
      margin-top: -22px;
      transition: .3s;
  }
+             
+.headerAppLogoBold {
+     width: 50%;
+     /*    max-width: 250px;*/
+     min-width: 130px;
+     margin: 20px;
+     margin-top: -22px;
+     transition: .3s;
+ }
                                         
           
  h4 {
