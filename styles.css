@@ -1017,6 +1017,9 @@ padding: 0px 10px 0px 10px;
  .headerAppLogo {
      width: 400px;
  }
+         .headerAppLogoBold {
+     width: 420px;
+ }
  .soonAppStore {
      margin-top: -5px;
      width: 180px;
@@ -1089,6 +1092,10 @@ padding: 0px 10px 0px 10px;
  }
  .headerAppLogo {
      width: 80%;
+ }
+    .headerAppLogoBold {
+     width: 90%;
+ 
  }
  .soonAppStore {
      margin-top: 0px;
