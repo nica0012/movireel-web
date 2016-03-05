@@ -251,6 +251,69 @@
 
         </div>
 
+        
+         <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" id="closeModal" title="Close" class="close"><i class="fa fa-times"></i>
+</a>
+                    <script>
+                        //Time of day message script- by javascriptkit.com
+                        //Visit JavaScript Kit (http://javascriptkit.com) for script
+                        //Credit must stay intact for use
+
+                        var Digital = new Date()
+                        var hours = Digital.getHours()
+
+                        //Configure message below to your own.
+                        if (hours >= 5 && hours <= 11) //MESSAGE FOR MORNING
+                            document.write('<h2>Good morning</h2>')
+                        else if (hours == 12) //MESSAGE FOR NOON
+                            document.write('<h2>Good morning</h2>')
+                        else if (hours >= 13 && hours <= 17) //MESSAGE FOR AFTERNOON
+                            document.write('<h2>Good afternoon</h2>')
+                        else if (hours >= 18 && hours <= 20) //MESSAGE FOR EVENING (6pm-8pm)
+                            document.write('<h2>Good evening</h2>')
+                        else if (hours >= 21 && hours <= 11) //MESSAGE FOR NIGHT (9pm-11pm)
+                            document.write('<h2>Good evening</h2>')
+                        else //MESSAGE FOR LATE NIGHT, EARLY MORNING (12pm-4am)
+                            document.write('<h2>Good evening</h2>')
+                    </script>
+                    <h3>How can we help you?<h3>
+
+                        
+<form action="#" method="post" name="form">
+   
+    <div class="inputStyle">
+
+    <p class="myname">
+
+        <input type="text" name="vname" id="myname" class="feedback-input"  placeholder="Name">
+        </p>
+
+        <p class="email">
+
+                <input type="text" name="vemail" id="email" class="feedback-input" placeholder="Email">
+        </p>
+                                                
+            <textarea name="msg" placeholder="Message" class="inputWidth"></textarea>
+
+                                                
+    </div>
+
+</br>
+
+<div class="submit">
+<input name="submit" type="submit" value="Send" id="submit">
+
+<div class="ease"></div>
+</div>
+            
+                </div>
+            </form>
+        </div>
+
+		
+</div>        
 
     </main>
 
