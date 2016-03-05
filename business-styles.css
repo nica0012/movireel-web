@@ -82,7 +82,7 @@ body {
 
 header {
     background-color: #dedede;
-    background-image: url(img/head-bg-business.png);
+    background-image: url(img/head-bg-business.jpg);
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -350,7 +350,7 @@ p {
 }
 
 #sec2 {
-    background-color: #ebebeb;
+    background-color: #f2f2f2;
     width: 100%;
     height: 100vh;
     max-height: 100vh;
