@@ -92,40 +92,37 @@ header {
     text-align: center;
 }
 
-
-
 .contentContain {}
 
 .headContentBusiness {
-     /*    margin-top: -60px;*/
-     width: 90%;
-     height: 50%;
-     /*  overflow: auto;*/
-     margin: auto;
-     position: absolute;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
+    /*    margin-top: -60px;*/
+    width: 90%;
+    height: 50%;
+    /*  overflow: auto;*/
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     display: table;
 }
-.headText{
+
+.headText {
     display: table-cell;
     vertical-align: middle;
 }
 
-#headTitle{
-    
+#headTitle {
     width: 70%;
 }
 
 h1 {
- 
     font-weight: 300;
     font-size: 80px;
     color: #ffffff;
     margin: 0 auto;
-text-align: center;
+    text-align: center;
     text-shadow: 0px 0px 1px #000000;
 }
 
@@ -215,7 +212,7 @@ h2 {
 }
 
 h3 {
-/*    color: #fff;*/
+    /*    color: #fff;*/
     font-size: 25px;
     margin-bottom: 15px;
 }
@@ -233,12 +230,14 @@ p {
     /*    overflow: auto;*/
 }
 
-.down1, .down2, .down3 {
+.down1,
+.down2,
+.down3 {
     position: absolute;
     width: 100%;
     text-align: center;
     margin: 0 auto;
-        color: rgba(90, 115, 255, 0.7);
+    color: rgba(90, 115, 255, 0.7);
     font-size: 35px;
     bottom: 15px;
     cursor: pointer;
@@ -248,25 +247,23 @@ p {
 .down1:hover {
     font-size: 37px;
     transition: .3s;
-        color: #5a73ff;
+    color: #5a73ff;
 }
-
 
 .fa-angle-down {
     margin-right: 20px;
 }
 
 .down2:hover {
-  font-size: 37px;
+    font-size: 37px;
     transition: .3s;
-        color: #5a73ff;
+    color: #5a73ff;
 }
 
-
 .down3:hover {
-   font-size: 37px;
+    font-size: 37px;
     transition: .3s;
-        color: #5a73ff;
+    color: #5a73ff;
 }
 
 .downHead {
@@ -280,25 +277,31 @@ p {
     cursor: pointer;
 }
 
-#sec1Mobile, #sec2Mobile, #sec3Mobile {
+#sec1Mobile,
+#sec2Mobile,
+#sec3Mobile {
     display: none;
 }
 
-#sec1, #sec2, #sec3 h2 {
+#sec1,
+#sec2,
+#sec3 h2 {
     color: #5a73ff;
 }
 
-#sec1, #sec2, #sec3 h3 {
+#sec1,
+#sec2,
+#sec3 h3 {
     color: #5a73ff;
 }
-.textContents p{
+
+.textContents p {
     max-width: 600px;
     margin: 0 auto;
 }
 
 #sec1 .textContents {
     float: left;
-
     width: 60%;
     height: 50%;
     margin: auto;
@@ -310,7 +313,6 @@ p {
     right: auto;
     text-align: center;
 }
-
 
 #sec1 .sectionImageContents {
     float: right;
@@ -325,7 +327,6 @@ p {
 }
 
 #sec1 img {
-    /* width: 60%;  */
     width: auto;
     height: 100%;
     margin: auto;
@@ -342,9 +343,7 @@ p {
     height: 100vh;
     max-height: 100vh;
     position: relative;
-    /*    overflow: auto;*/
 }
-
 
 #sec2 .textContents {
     float: right;
@@ -374,7 +373,6 @@ p {
 }
 
 #sec2 img {
-    /* width: 60%;  */
     width: auto;
     height: 100%;
     margin: auto;
@@ -391,9 +389,7 @@ p {
     height: 100vh;
     max-height: 100vh;
     position: relative;
-    /*    overflow: auto;*/
 }
-
 
 #sec3 .textContents {
     float: left;
@@ -422,7 +418,6 @@ p {
 }
 
 #sec3 img {
-    /* width: 60%;  */
     width: auto;
     height: 100%;
     margin: auto;
@@ -439,8 +434,6 @@ p {
 .instagramIconFoot {
     margin-right: -20px;
 }
-
-
 
 .modalDialog {
     position: fixed;
@@ -459,7 +452,6 @@ p {
     pointer-events: none;
 }
 
-
 .modalDialog:target {
     opacity: 1;
     pointer-events: auto;
@@ -472,11 +464,6 @@ p {
     padding: 15px 20px 25px 20px;
     border-radius: 10px;
     background: #fff;
-    /*
-    background: -moz-linear-gradient(#5971FF, #ffffff);
-    background: -webkit-linear-gradient(#5971FF, #ffffff);
-    background: -o-linear-gradient(#5971FF, #ffffff);
-*/
     background: #5971FF;
 }
 
@@ -506,14 +493,11 @@ p {
 
 /* FOOTER ---------------------------------- */
 
-
-@media screen and (max-width: 1275px)
-    {
-        .sectionImageContents{
-         max-height: 650px;   
-        }
+@media screen and (max-width: 1275px) {
+    .sectionImageContents {
+        max-height: 650px;
     }
-
+}
 
 @media screen and (max-width: 979px)
 /* Tablet */
@@ -521,7 +505,6 @@ p {
 {
     h1 {
         font-size: 60px;
-        /*        background: blue;*/
     }
     .headContent h3 {
         font-size: 22px;
@@ -552,12 +535,10 @@ p {
     #sec2 .textContents {
         width: 50%;
         height: 50%;
-        /*        background-color: red;*/
         margin-right: 33px;
         text-align: left;
     }
     #sec2 .sectionImageContents {
-        /*        width: 20%;*/
         height: 100%;
     }
     #sec2 img {
@@ -587,11 +568,10 @@ p {
 
 {
     #navCBS {
-/*        display: none;*/
+        /*        display: none;*/
     }
     h1 {
         font-size: 47px;
-        /*        background: #ea00fd;*/
     }
     .headContentBusiness h3 {
         font-size: 18px;
@@ -660,15 +640,13 @@ p {
 
 {
     #nav li {
-/*        display: none;*/
     }
     h1 {
-        /*                background: green;*/
         font-size: 30px;
         margin-bottom: 5px;
     }
     h2 {
-    color: #5a73ff;
+        color: #5a73ff;
         text-align: center;
         font-size: 29px;
         top: 10px;
