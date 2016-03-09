@@ -17,8 +17,6 @@ a3a4a4 - mid gray
                                         
  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-
-
 *:focus {
     outline: none;
 }
@@ -108,20 +106,21 @@ a3a4a4 - mid gray
  /* HEADER ---------------------------------- */
  
  header {
-/*     background-color: #5a73ff;*/
+     background-color: #5a73ff;
      background-image: url(img/header-bg.svg);
      z-index: 100;
      position: relative;
      background-size: cover;
      overflow: hidden;
-     width: 100%;
      height: 100vh;
      max-height: 100vh;
      text-align: center;
-/*           margin-bottom: 6rem;*/
    box-shadow: 0 6px 30px 0 rgba(173, 173, 173, 0.2),
                 0 8px 12px 0 rgba(173, 173, 173, 0.01);
     background-attachment: fixed;
+          width: 100%;
+     margin: 0px;
+
 
  }
 
@@ -1097,6 +1096,12 @@ padding: 0px 10px 0px 10px;
 @media only screen and (max-width: 767px) and (orientation: portrait) {
  /* portrait phones */
     
+     header {
+     background-color: #5a73ff;
+     background-image: none;
+
+ }
+
  
  .headContent {
      width: 95%;
@@ -1197,6 +1202,9 @@ display: none;
         display: none;
     }
     
+    .getStarted{
+     height: 400px;
+}
     #moreInfo{
         display: block;
         position: absolute;
