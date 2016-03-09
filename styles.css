@@ -121,6 +121,7 @@ a3a4a4 - mid gray
 /*           margin-bottom: 6rem;*/
    box-shadow: 0 6px 30px 0 rgba(173, 173, 173, 0.2),
                 0 8px 12px 0 rgba(173, 173, 173, 0.01);
+    background-attachment: fixed;
 
  }
 
@@ -339,6 +340,7 @@ a3a4a4 - mid gray
   left: 0;
   bottom: 0;
   right: 0;
+    
 }
 
 
@@ -691,7 +693,7 @@ position: absolute;
 
     main p {
       font-family: 'Open Sans', sans-serif, arial;
-      color: #151515;
+      color: #535353;
   }
   
   #mainHead {
@@ -870,38 +872,56 @@ color: #fff;
     vertical-align: middle;
 }
 
-                                        /* FOOTER ---------------------------------- */
+ /* FOOTER ---------------------------------- */
                                         
        .scrollup {
            font-size: 3.5rem;
-           color: #fff;
+           color: rgba(255, 255, 255, 0.87);
            cursor: pointer;
            transition: .3s;
 /*           padding-bottom: 45px;*/
            width: 100%;
            text-align: center;
+           display: table-cell;
+           vertical-align: middle;
+           position: relative;
        }
        
        .scrollup:hover {
            cursor: pointer;
-           color: rgba(226, 226, 226, 0.86);
+           color: #fff;
            transition: .3s;
        }
+
+#reelFoot{
+   width: 55px;
+         transition: .1s;
+
+}
+#reelFoot:hover{
+transform: scale(1.05);
+    transition: .3s;
+   
+
+}
        
        footer {
-           padding-bottom: 25px;
-           padding-top: 15px;
+           padding-bottom: 5px;
+           padding-top: 5px;
            /*                margin-top: 4rem;*/
-           height: auto;
     background-color: #5a73ff;
            list-style: none;
-           text-align: center;
+/*           text-align: center;*/
            text-decoration: none;
+           height:150px;
+           width: 100%;
+           position: relative;
        }
        
-       footer .fa {
-           padding-top: 15px;
-       }
+       #instagramIconFoot, #facebookIconFoot, #twitterIconFoot {
+           font-size:1.3rem;
+
+}
        
        .footp {
            font-size: 14px;
@@ -913,20 +933,33 @@ color: #fff;
        
        #socialmedia {
            padding-top: 0px;
+                      display: table;
+           position: relative;
+
        }
        
+.social-buttons{
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    margin: 0px;
+    padding: 0px;
+
+}
+        
+
        .social-buttons li {
 /*
            margin-top: .1rem;
            margin-top: .1rem;
 */
            display: inline-block;
-           padding-right: 25px;
-           font-size: 2.3rem;
+           padding-right: 15px;
+           font-size:13px;
        }
        
        .instagramIconFoot {
-           margin-right: 20px;
+/*           margin-right: 20px;*/
        }
        
        .social-buttons a {
@@ -983,9 +1016,7 @@ padding: 0px 10px 0px 10px;
            h4 {
                font-size: 20px;
            }
-           #apple {
-               font-size: 30px;
-           }
+       
            .headerAppLogo {
                width: 50%;
                margin-top: -40px;
@@ -1027,9 +1058,7 @@ padding: 0px 10px 0px 10px;
  h4 {
      font-size: 18px;
  }
- #apple {
-     font-size: 30px;
- }
+
  /*    MAIN*/
  h2 {
      margin: 35px;
@@ -1084,8 +1113,11 @@ padding: 0px 10px 0px 10px;
      font-size: 16px;
  }
  header ul {
-     display: none;
+/*     display: none;*/
  }
+    .socialMedia{
+        display: none;
+    }
  h1 {
      margin-top: 2px;
      font-size: 18px;
@@ -1104,9 +1136,7 @@ padding: 0px 10px 0px 10px;
  h4 {
      font-size: 18px;
  }
- #apple {
-     font-size: 30px;
- }
+
  /*    MAIN*/
  h2 {
      margin: 35px;
@@ -1171,9 +1201,9 @@ display: none;
         display: block;
         position: absolute;
         bottom: 60px;
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
         
             cursor: pointer;
     height: 50px;

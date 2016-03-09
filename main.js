@@ -41,6 +41,8 @@ $(document).ready(function () {
 
     });
 
+ 
+    
     $(".down1").click(function () {
         $('html, body').animate({
             scrollTop: $(".section2").offset().top
@@ -83,6 +85,7 @@ $(document).ready(function() {
 //                $('#reelSliderBg').css("display","block");
 
     });
+
 });
 //
 
