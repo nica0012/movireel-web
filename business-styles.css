@@ -681,6 +681,14 @@ color: #fff;
 /* Mobile */
 
 {
+     header {
+        background-color: #5a73ff;
+        background-image: none;
+         height: 600px;
+    }
+    .downHead{
+        font-size: 28px;
+    }
     #nav li {
     }
     h1 {
