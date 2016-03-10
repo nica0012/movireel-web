@@ -16,14 +16,14 @@ $(document).ready(function () {
     });
 
     //Scroll to form
-
-    $(".jumper").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#myDiv").offset().top
-        }, 800);
-        return false;
-
-    });
+//
+//    $(".jumper").click(function () {
+//        $('html, body').animate({
+//            scrollTop: $("#myDiv").offset().top
+//        }, 800);
+//        return false;
+//
+//    });
 
     $(".downHead").click(function () {
         $('html, body').animate({
@@ -68,7 +68,7 @@ $(document).ready(function () {
 });
 
 
-$("#contactLi, #modal3Btn").click(function(){
+$(".noScroll, .noScroll2").click(function(){
   $("body").css("overflow","hidden");
 });
 $(".close").click(function(){

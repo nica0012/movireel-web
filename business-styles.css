@@ -76,9 +76,10 @@ td {
 html,
 body {
     max-width: 100%;
-    overflow-x: hidden;
+/*    overflow-x: hidden;*/
     font-family: 'Open Sans', sans-serif, arial;
 }
+
 
 header {
     background-color: #dedede;
@@ -211,11 +212,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-h3 {
-    /*    color: #fff;*/
-    font-size: 25px;
-    margin-bottom: 15px;
-}
 
 p {
     color: #2c2c2c;
@@ -283,51 +279,60 @@ p {
     display: none;
 }
 
-#sec1,
-#sec2,
+#sec1 h2,
+#sec2 h2,
 #sec3 h2 {
     color: #5a73ff;
 }
 
-#sec1,
-#sec2,
+#sec1 h3,
+#sec2 h3,
 #sec3 h3 {
     color: #5a73ff;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
+
 
 .textContents p {
     max-width: 600px;
     margin: 0 auto;
 }
 
+#sec1{
+    display: table;
+    width: 100%;
+}
+
 #sec1 .textContents {
-    float: left;
+/*    float: left;*/
     width: 60%;
-    height: 50%;
-    margin: auto;
-    margin-left: 40px;
-    position: absolute;
+/*    height: 50%;*/
+    margin: 0 auto;
+/*    margin-left: 40px;*/
+    position: relative;
+/*
     top: 0;
     left: 0;
     bottom: 0;
-    right: auto;
+*/
+/*    right: auto;*/
     text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #sec1 .sectionImageContents {
-    float: right;
+/*    float: right;*/
     width: 40%;
-    height: 100%;
     margin: auto;
-    position: absolute;
-    top: 0;
-    left: auto;
-    bottom: 0;
-    right: 0;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+
 }
 
 #sec1 img {
-    width: auto;
     height: 100%;
     margin: auto;
     position: absolute;
@@ -435,7 +440,7 @@ p {
     margin-right: -20px;
 }
 
-.modalDialog {
+.modalMoreInfo {
     position: fixed;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -451,13 +456,20 @@ p {
     transition: opacity 100ms ease-in;
     pointer-events: none;
 }
+.modalMoreInfo p{
+color: #fff;
+}
+.modalMoreInfo h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
-.modalDialog:target {
+.modalMoreInfo:target {
     opacity: 1;
     pointer-events: auto;
 }
 
-.modalDialog > div {
+.modalMoreInfo > div {
     width: 75%;
     position: relative;
     margin: 50% auto;
@@ -467,8 +479,10 @@ p {
     background: #5971FF;
 }
 
+
+
 .close {
-    background: #ff5050;
+    background: #ff7979;
     color: #FFFFFF;
     line-height: 25px;
     position: absolute;
@@ -484,10 +498,13 @@ p {
     -moz-box-shadow: 1px 1px 3px #000;
     -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
+        transition: .2s;
+
 }
 
 .close:hover {
     background: #ff0000;
+    transition: .3s;
 }
 
 
@@ -645,6 +662,7 @@ p {
         font-size: 30px;
         margin-bottom: 5px;
     }
+/*
     h2 {
         color: #5a73ff;
         text-align: center;
@@ -656,6 +674,7 @@ p {
         margin-left: auto;
         margin-right: auto;
     }
+*/
     h3 {
         font-size: 18px;
         color: #ffffff;

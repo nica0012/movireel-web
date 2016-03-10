@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="business-styles.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
 </head>
 
@@ -30,18 +29,7 @@
     <div id="contentContain">
 
         <header>
-            <!--Video-->
 
-            <!--
-            <div class="videoHead">
-                <video class="videoHeader" autoplay loop muted>
-
-                    <source src="Night-Out.mp4" type="video/mp4">
-
-
-                </video>
-            </div>
--->
 
             <!--Navigation-->
 
@@ -56,7 +44,7 @@
                                 <a href="">Blog</a>
                             </li>
                             <li class="CBS">
-                                <a class="jumper" id="contactLi" href="">Contact
+                                <a class="noScroll2" id="contactLi" href="#openModalForm">Contact</a>
 </a>
                             </li>
 
@@ -140,7 +128,7 @@
                 <div style="text-align:center;">
                     <a href="#openModal1" class="mobileBtn">See More</a>
                 </div>
-                <div id="openModal1" class="modalDialog">
+                <div id="openModal1" class="modalMoreInfo">
                     <div>
                         <a href="#close" title="Close" class="close">X</a>
                         <h3>Never Miss Another Moment</h3>
@@ -150,7 +138,6 @@
                 <!--
                 <div class="down1">
                     <i class="fa fa-angle-down"></i>
-
                 </div>
 -->
             </section>
@@ -182,11 +169,11 @@
             <section id="sec2Mobile">
                 <h2>Customization</h2>
 
-                <img src="img/iPhone6-Flat-edit-pic-01.png" />
+                    <img src="img/iPhone6-Flat-edit-pic.png" />
                 <div style="text-align:center;">
                     <a href="#openModal2" class="mobileBtn">See More</a>
                 </div>
-                <div id="openModal2" class="modalDialog">
+                <div id="openModal2" class="modalMoreInfo">
                     <div>
                         <a href="#close" title="Close" class="close">X</a>
                         <h3>It's never been so easy...</h3>
@@ -196,7 +183,6 @@
                 <!--
                 <div class="down2">
                     <i class="fa fa-angle-down"></i>
-
                 </div>
 -->
             </section>
@@ -234,7 +220,7 @@
                 <div style="text-align:center;">
                     <a href="#openModal3" class="mobileBtn">See More</a>
                 </div>
-                <div id="openModal3" class="modalDialog">
+                <div id="openModal3" class="modalMoreInfo">
                     <div>
                         <a href="#close" title="Close" class="close">X</a>
                         <h3>Whats a party with no music?</h3>
@@ -244,7 +230,6 @@
                 <!--
                 <div class="down3">
                     <i class="fa fa-angle-down"></i>
-
                 </div>
 -->
 
@@ -253,18 +238,17 @@
         </div>
 
 
-        <div id="openModal" class="modalDialog">
+        <div id="openModalForm" class="modalDialogForm">
             <div>
                 <a href="#close" id="closeModal" title="Close" class="close"><i class="fa fa-times"></i>
 </a>
+<!--
                 <script>
                     //Time of day message script- by javascriptkit.com
                     //Visit JavaScript Kit (http://javascriptkit.com) for script
                     //Credit must stay intact for use
-
                     var Digital = new Date()
                     var hours = Digital.getHours()
-
                     //Configure message below to your own.
                     if (hours >= 5 && hours <= 11) //MESSAGE FOR MORNING
                         document.write('<h2>Good morning</h2>')
@@ -279,6 +263,9 @@
                     else //MESSAGE FOR LATE NIGHT, EARLY MORNING (12pm-4am)
                         document.write('<h2>Good evening</h2>')
                 </script>
+-->
+                                    <h2>Contact</h2>
+
                 <h3>How can we help you?<h3>
 
                         
@@ -286,16 +273,17 @@
    
     <div class="inputStyle">
 
-    <p class="myname">
+    <span class="myname">
 
         <input type="text" name="vname" id="myname" class="feedback-input"  placeholder="Name">
-        </p>
-
-        <p class="email">
+        </span>
+<br>
+        <span class="email">
 
                 <input type="text" name="vemail" id="email" class="feedback-input" placeholder="Email">
-        </p>
-                                                
+        </span>
+             <br>
+                                   
             <textarea name="msg" placeholder="Message" class="inputWidth"></textarea>
 
                                                 
@@ -358,7 +346,7 @@ Rewind
             <li id="privacy"> <a href="https://www.instagram.com/movireel/">Privacy
 </a>
             </li>  
-            <li id="privacy"> <a href="#openModal">Contact
+            <li id="privacy"> <a href="#openModalForm" class="noScroll2">Contact
 </a>
             </li> 
             <li id="privacy"> <a href="https://www.instagram.com/movireel/">Team
@@ -370,7 +358,7 @@ Rewind
     </footer>
 
 
-    <script src="js/main.js"></script>
 </body>
+    <script src="js/main.js"></script>
 
 </html>
