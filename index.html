@@ -5,21 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoviReel</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
 
     <!--    <link rel="stylesheet" href="styles.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="dist/stylesheets/superslides.css">
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -50,14 +41,17 @@
                 <div id="navCBS">
                     <a href="index.html">
                         <ul class="navMiddle">
-                            <li class="CBS" id="abyondLink">
-                                <a href="abyond.html">Blog</a>
+                            <li class="CBS">
+                                <a href="index.html" class="active">Home</a>
+                            </li>
+                            <li class="CBS">
+                                <a href="">Blog</a>
                             </li>
                             <li class="CBS">
                                 <a href="business.html">Business</a>
                             </li>
                             <li class="CBS" id="jumper">
-                                <a id="contactLi" class="noScroll" href="#openModal">Contact</a>
+<!--                                <a id="contactLi" class="noScroll" href="#openModal">Contact</a>-->
                             </li>
                         </ul>
 
@@ -112,296 +106,284 @@
             </div>
 
 
-<!--
 
-            <div id="openModal" class="modalDialogForm">
-                <div>
-                    <a href="#close" id="closeModal" title="Close" class="close"><i class="fa fa-times"></i>
-</a>
-                    <script>
-                        //Time of day message script- by javascriptkit.com
-                        //Visit JavaScript Kit (http://javascriptkit.com) for script
-                        //Credit must stay intact for use
 
-                        var Digital = new Date()
-                        var hours = Digital.getHours()
 
-                        //Configure message below to your own.
-                        if (hours >= 5 && hours <= 11) //MESSAGE FOR MORNING
-                            document.write('<h2>Good morning</h2>')
-                        else if (hours == 12) //MESSAGE FOR NOON
-                            document.write('<h2>Good morning</h2>')
-                        else if (hours >= 13 && hours <= 17) //MESSAGE FOR AFTERNOON
-                            document.write('<h2>Good afternoon</h2>')
-                        else if (hours >= 18 && hours <= 20) //MESSAGE FOR EVENING (6pm-8pm)
-                            document.write('<h2>Good evening</h2>')
-                        else if (hours >= 21 && hours <= 11) //MESSAGE FOR NIGHT (9pm-11pm)
-                            document.write('<h2>Good evening</h2>')
-                        else //MESSAGE FOR LATE NIGHT, EARLY MORNING (12pm-4am)
-                            document.write('<h2>Good evening</h2>')
-                    </script>
-                    <h3>How can we help you?<h3>
-
-                        
-<form action="#" method="post" name="form">
-   
-    <div class="inputStyle">
-
-    <span class="myname">
-
-        <input type="text" name="vname" id="myname" class="feedback-input"  placeholder="Name">
-        </span>
-<br>
-        <span class="email">
-
-                <input type="text" name="vemail" id="email" class="feedback-input" placeholder="Email">
-        </span>
-             <br>
-                                   
-            <textarea name="msg" placeholder="Message" class="inputWidth"></textarea>
-
-                                                
     </div>
-
-</br>
-
-<div class="submit">
-<input name="submit" type="submit" value="Send" id="submit">
-
-<div class="ease"></div>
-</div>
-            
-                </div>
-            </form>
-        </div>
--->
-
-		
-</div>        
-        </header>
+    </header>
     </div>
 
     <!--MAIN-->
-    
-    
-<main>
-<div class="fixedHead">
-<img src="img/blue-reel.svg" id="blueReel" class="rotating">
-    </div>
-<div id="slides">
-    <ul class="slides-container">
-
-    <li class="wrap">
-        <h2 class="titleMobile">Trevor Godhino</h2>
-
-<div class="contain">
-    <div class="containerText">
-        <h2>Trevor Godhino</h2>
-        <p>I tried MoviReel and love the possibilities of being able to hand over the documentation of my behind the scenes to the members of the team to showcase their own perspective of the day while taking out the annoying process of collection and sorting images due to the app already does this for you. The final product was amazing, seamless and professional and with the social media SEO features it allows you to see how much of an impact the production has on the social media world. - Trevor Godhino.
-        </p>
-         <div class="reelSocial">
-            <a href="#three"> <i class="fa fa-facebook" id="facebook"></i></a>
-            <a href="https://twitter.com/TREVORGODINHO" target="_blank"> <i class="fa fa-twitter" id="twitter"></i></a>
-            <a href="#three"> <i class="fa fa-instagram" id="instagram"></i> </a>  
-          </div>
-    </div>   
-    <div class="containerVideo">
-        <video poster="" width="320" controls loop class="video" id="video1" onclick="this.play()">
-
-            <source src="reels/pilot.mov" type="video/mp4">
-        </video>
-        <div class="vidOverlay">
-        </div>
-
-    </div>
-</div>
-        <button id="moreInfo">More Info</button>
-
-    </li>
-       <li class="wrap">
-<!--        <img src="images/people.jpeg" alt="Cinelli">-->
-                <h2 class="titleMobile">Trevor Godhino</h2>
-
-<div class="contain">
-    <div class="containerText">
-        <h2>Trevor Godhino</h2>
-        <p>I tried MoviReel and love the possibilities of being able to hand over the documentation of my behind the scenes to the members of the team to showcase their own perspective of the day while taking out the annoying process of collection and sorting images due to the app already does this for you. The final product was amazing, seamless and professional and with the social media SEO features it allows you to see how much of an impact the production has on the social media world. - Trevor Godhino.
-        </p>
-         <div class="reelSocial">
-            <a href="#three"> <i class="fa fa-facebook" id="facebook"></i></a>
-            <a href="#three"> <i class="fa fa-twitter" id="twitter"></i></a>
-            <a href="#three"> <i class="fa fa-instagram" id="instagram"></i> </a>  
-          </div>
-    </div>   
-    <div class="containerVideo">
-        <video poster="" width="320" controls loop class="video" id="video2" onclick="this.play()">
-            <source src="reels/pilot.mov" type="video/mp4">
-        </video>
-
-    </div>
-</div>
-        <button id="moreInfo">More Info</button>
-
-    </li>
-        
-        <li class="wrap">
-<!--        <img src="images/people.jpeg" alt="Cinelli">-->
-                <h2 class="titleMobile">Trevor Godhino</h2>
-
-<div class="contain">
-    <div class="containerText">
-        <h2>Trevor Godhino</h2>
-        <p>I tried MoviReel and love the possibilities of being able to hand over the documentation of my behind the scenes to the members of the team to showcase their own perspective of the day while taking out the annoying process of collection and sorting images due to the app already does this for you. The final product was amazing, seamless and professional and with the social media SEO features it allows you to see how much of an impact the production has on the social media world. - Trevor Godhino.
-        </p>
-         <div class="reelSocial">
-            <a href="#three"> <i class="fa fa-facebook" id="facebook"></i></a>
-            <a href="#three"> <i class="fa fa-twitter" id="twitter"></i></a>
-            <a href="#three"> <i class="fa fa-instagram" id="instagram"></i> </a>  
-          </div>
-    </div>   
-    <div class="containerVideo">
-        <video poster="" width="320" controls loop class="video" id="video3" onclick="this.play()">
-            <source src="reels/pilot.mov" type="video/mp4">
-        </video>
-
-    </div>
-</div>
-        <button id="moreInfo">More Info</button>
-
-    </li>
-        
-       <li class="wrap">
-<!--        <img src="images/people.jpeg" alt="Cinelli">-->
-                <h2 class="titleMobile">Trevor Godhino</h2>
-
-<div class="contain">
-    <div class="containerText">
-        <h2>Trevor Godhino</h2>
-        <p>I tried MoviReel and love the possibilities of being able to hand over the documentation of my behind the scenes to the members of the team to showcase their own perspective of the day while taking out the annoying process of collection and sorting images due to the app already does this for you. The final product was amazing, seamless and professional and with the social media SEO features it allows you to see how much of an impact the production has on the social media world. - Trevor Godhino.
-        </p>
-         <div class="reelSocial">
-            <a href="#three"> <i class="fa fa-facebook" id="facebook"></i></a>
-            <a href="#three"> <i class="fa fa-twitter" id="twitter"></i></a>
-            <a href="#three"> <i class="fa fa-instagram" id="instagram"></i> </a>  
-          </div>
-    </div>   
-    <div class="containerVideo">
-        <video poster="" width="320" controls loop class="video" id="video4" onclick="this.play()">
-            <source src="reels/pilot.mov" type="video/mp4">
-        </video>
-
-    </div>
-</div>
-        <button id="moreInfo">More Info</button>
-
-    </li>
-        
-<!--
-      <img src="images/surly.jpeg" width="1024" height="682" alt="Surly">
-      <img src="images/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli">
-      <img src="images/affinity.jpeg" width="1024" height="685" alt="Affinity">
--->
-    </ul>
-
-    <nav class="slides-navigation">
-      <a href="#" class="next"><i class="fa fa-chevron-right" id="next"></i>
-</a>
-      <a href="#" class="prev"><i class="fa fa-chevron-left" id="prev"></i>
-</a>
-    </nav>
-    
-<!--<button id="getStartedBtn">Get Started</button>-->
-
-  </div>        
-        
-<section class="getStarted">
 
 
-<div class="getStartedContent">
-<h2>What are you waiting for?</h2>
-<hr>
 
-<button id="getStartedBtn">Get Started</button>
+    <main>
+
+        <img src="img/blue-reel.svg" id="blueReel" class="rotating">
+
+        <!--OPEN REELS-->
 
 
-    
-</div>
+        <div class="mockWrap" id="OR">
+            <h2 class="titleMobile">Open Reels</h2>
 
-</section>
-    
-            <div id="openModal" class="modalDialogForm">
-                <div>
-                    <a href="#close" id="closeModal" title="Close" class="close"><i class="fa fa-times"></i>
-</a>
-<!--
-                    <script>
-                        //Time of day message script- by javascriptkit.com
-                        //Visit JavaScript Kit (http://javascriptkit.com) for script
-                        //Credit must stay intact for use
-
-                        var Digital = new Date()
-                        var hours = Digital.getHours()
-
-                        //Configure message below to your own.
-                        if (hours >= 5 && hours <= 11) //MESSAGE FOR MORNING
-                            document.write('<h2>Good morning</h2>')
-                        else if (hours == 12) //MESSAGE FOR NOON
-                            document.write('<h2>Good morning</h2>')
-                        else if (hours >= 13 && hours <= 17) //MESSAGE FOR AFTERNOON
-                            document.write('<h2>Good afternoon</h2>')
-                        else if (hours >= 18 && hours <= 20) //MESSAGE FOR EVENING (6pm-8pm)
-                            document.write('<h2>Good evening</h2>')
-                        else if (hours >= 21 && hours <= 11) //MESSAGE FOR NIGHT (9pm-11pm)
-                            document.write('<h2>Good evening</h2>')
-                        else //MESSAGE FOR LATE NIGHT, EARLY MORNING (12pm-4am)
-                            document.write('<h2>Good evening</h2>')
-                    </script>
--->
-                    
-                    <h2>Contact</h2>
-                    <h3>How can we help you?<h3>
-
-                        
-<form action="#" method="post" name="form">
-   
-    <div class="inputStyle">
-
-    <span class="myname">
-
-        <input type="text" name="vname" id="myname" class="feedback-input"  placeholder="Name">
-        </span>
-<br>
-        <span class="email">
-
-                <input type="text" name="vemail" id="email" class="feedback-input" placeholder="Email">
-        </span>
-             <br>
-                                   
-            <textarea name="msg" placeholder="Message" class="inputWidth"></textarea>
-
-                                                
-    </div>
-
-</br>
-
-<div class="submit">
-<input name="submit" type="submit" value="Send" id="submit">
-
-<div class="ease"></div>
-</div>
-            
+            <div class="contain">
+                <div class="containerTextLeft">
+                    <h2>Open Reels</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    </p>
+<button id="downloadBtn"><span id="downloadText">Download Now </span>
+</button>
                 </div>
-            </form>
+                <div class="containerMock">
+                    <img src="img/mock-openreels.png" class="mockImg" />
+                </div>
+            </div>
+            <button id="moreInfo">More Info</button>
+            <div class="downOR">
+                <i class="fa fa-chevron-down"></i>
+
+            </div>
         </div>
 
-    
-    
+        <!--CUSTOMIZATION-->
+
+        <div class="mockWrap" id="bgColorWhite">
+            <h2 class="titleMobile">Customization</h2>
+
+            <div class="contain">
+                <div class="containerMockLeft">
+                    <img src="img/mock-customize.png" class="mockImg" />
+                </div>
+                <div class="containerTextRight">
+                    <h2>Customization</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    </p>
+                    <button id="downloadBtn"><span id="downloadText">Download Now </span>
+</button>
+
+                </div>
+
+            </div>
+            <button id="moreInfo">More Info</button>
+            <div class="downCus">
+                <i class="fa fa-chevron-down"></i>
+
+            </div>
+        </div>
+
+        <!--PREVIEW-->
+
+
+        <div class="mockWrap" id="previewScroll">
+            <h2 class="titleMobile">Preview</h2>
+
+            <div class="contain">
+                <div class="containerTextLeft">
+                    <h2>Preview</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    </p>
+<button id="downloadBtn"><span id="downloadText">Download Now </span>
+</button>
+                </div>
+                <div class="containerMock">
+                    <img src="img/mock-preview.png" class="mockImg" />
+                </div>
+            </div>
+            <button id="moreInfo">More Info</button>
+            <div class="downPrev">
+                <i class="fa fa-chevron-down"></i>
+
+            </div>
+        </div>
+
+        <!--SLIDER REEL SHOWCASE-->
+
+
+        <div id="slides">
+            <ul class="slides-container">
+
+                <li class="wrap">
+                    <h2 class="titleMobile">Trever Godhino</h2>
+
+                    <div class="contain">
+                        <div class="containerText">
+                            <h2>Preview</h2>
+                            <p>I tried MoviReel and love the possibilities of being able to hand over the documentation of my behind the scenes to the members of the team to showcase their own perspective of the day while taking out the annoying process of collection and sorting images due to the app already does this for you. The final product was amazing, seamless and professional and with the social media SEO features it allows you to see how much of an impact the production has on the social media world. - Trevor Godhino.
+                            </p>
+                            <div class="reelSocial">
+                                <a href="#three"> <i class="fa fa-facebook" id="facebook"></i></a>
+                                <a href="https://twitter.com/TREVORGODINHO" target="_blank"> <i class="fa fa-twitter" id="twitter"></i></a>
+                                <a href="#three"> <i class="fa fa-instagram" id="instagram"></i> </a>
+                            </div>
+                        </div>
+                        <div class="containerVideo">
+                            <video poster="" width="320" controls loop class="video" id="video1" onclick="this.play()">
+
+                                <source src="reels/pilot.mov" type="video/mp4">
+                            </video>
+                            <div class="vidOverlay">
+                            </div>
+
+                        </div>
+                    </div>
+                    <button id="moreInfo">More Info</button>
+
+                </li>
+                <li class="wrap">
+                    <!--        <img src="images/people.jpeg" alt="Cinelli">-->
+                    <h2 class="titleMobile">Trevor Godhino</h2>
+
+                    <div class="contain">
+                        <div class="containerText">
+                            <h2>Trevor Godhino</h2>
+                            <p>I tried MoviReel and love the possibilities of being able to hand over the documentation of my behind the scenes to the members of the team to showcase their own perspective of the day while taking out the annoying process of collection and sorting images due to the app already does this for you. The final product was amazing, seamless and professional and with the social media SEO features it allows you to see how much of an impact the production has on the social media world. - Trevor Godhino.
+                            </p>
+                            <div class="reelSocial">
+                                <a href="#three"> <i class="fa fa-facebook" id="facebook"></i></a>
+                                <a href="#three"> <i class="fa fa-twitter" id="twitter"></i></a>
+                                <a href="#three"> <i class="fa fa-instagram" id="instagram"></i> </a>
+                            </div>
+                        </div>
+                        <div class="containerVideo">
+                            <video poster="" width="320" controls loop class="video" id="video2" onclick="this.play()">
+                                <source src="reels/pilot.mov" type="video/mp4">
+                            </video>
+
+                        </div>
+                    </div>
+                    <button id="moreInfo">More Info</button>
+
+                </li>
+
+                <li class="wrap">
+                    <!--        <img src="images/people.jpeg" alt="Cinelli">-->
+                    <h2 class="titleMobile">Trevor Godhino</h2>
+
+                    <div class="contain">
+                        <div class="containerText">
+                            <h2>Trevor Godhino</h2>
+                            <p>I tried MoviReel and love the possibilities of being able to hand over the documentation of my behind the scenes to the members of the team to showcase their own perspective of the day while taking out the annoying process of collection and sorting images due to the app already does this for you. The final product was amazing, seamless and professional and with the social media SEO features it allows you to see how much of an impact the production has on the social media world. - Trevor Godhino.
+                            </p>
+                            <div class="reelSocial">
+                                <a href="#three"> <i class="fa fa-facebook" id="facebook"></i></a>
+                                <a href="#three"> <i class="fa fa-twitter" id="twitter"></i></a>
+                                <a href="#three"> <i class="fa fa-instagram" id="instagram"></i> </a>
+                            </div>
+                        </div>
+                        <div class="containerVideo">
+                            <video poster="" width="320" controls loop class="video" id="video3" onclick="this.play()">
+                                <source src="reels/pilot.mov" type="video/mp4">
+                            </video>
+
+                        </div>
+                    </div>
+                    <button id="moreInfo">More Info</button>
+
+                </li>
+
+                <li class="wrap">
+                    <!--        <img src="images/people.jpeg" alt="Cinelli">-->
+                    <h2 class="titleMobile">Trevor Godhino</h2>
+
+                    <div class="contain">
+                        <div class="containerText">
+                            <h2>Trevor Godhino</h2>
+                            <p>I tried MoviReel and love the possibilities of being able to hand over the documentation of my behind the scenes to the members of the team to showcase their own perspective of the day while taking out the annoying process of collection and sorting images due to the app already does this for you. The final product was amazing, seamless and professional and with the social media SEO features it allows you to see how much of an impact the production has on the social media world. - Trevor Godhino.
+                            </p>
+                            <div class="reelSocial">
+                                <a href="#three"> <i class="fa fa-facebook" id="facebook"></i></a>
+                                <a href="#three"> <i class="fa fa-twitter" id="twitter"></i></a>
+                                <a href="#three"> <i class="fa fa-instagram" id="instagram"></i> </a>
+                            </div>
+                        </div>
+                        <div class="containerVideo">
+                            <video poster="" width="320" controls loop class="video" id="video4" onclick="this.play()">
+                                <source src="reels/pilot.mov" type="video/mp4">
+                            </video>
+
+                        </div>
+                    </div>
+                    <button id="moreInfo">More Info</button>
+
+                </li>
+            </ul>
+
+            <nav class="slides-navigation">
+                <a href="#" class="next"><i class="fa fa-chevron-right" id="next"></i>
+</a>
+                <a href="#" class="prev"><i class="fa fa-chevron-left" id="prev"></i>
+</a>
+            </nav>
+
+            <!--<button id="getStartedBtn">Get Started</button>-->
+
+        </div>
+
+        <section class="getStarted">
+
+
+            <div class="getStartedContent">
+                <h2>What are you waiting for?</h2>
+                <hr>
+
+                <button id="getStartedBtn">Get Started</button>
+
+
+
+            </div>
+
+        </section>
+
+        <div id="openModal" class="modalDialogForm">
+            <div>
+                <a href="#close" id="closeModal" title="Close" class="close"><i class="fa fa-times"></i>
+</a>
+                <div class="modal-header">
+                    <h2>Contact</h2>
+                    <h3>How can we help you?</h3>
+                </div>
+                <form action="#" method="post" name="form">
+                    <div class="inputStyle">
+                        <span class="myname">
+        <input type="text" name="vname" id="myname" class="feedback-input"  placeholder="Name">
+                        </span>
+                        <br>
+                        <span class="email">
+                <input type="text" name="vemail" id="email" class="feedback-input" placeholder="Email">
+                        </span>
+                        <br>
+
+                        <textarea name="msg" placeholder="Message" class="inputWidth"></textarea>
+
+
+                    </div>
+
+                    </br>
+
+                    <div class="submit">
+                        <input name="submit" type="submit" value="Send" id="submit">
+
+                        <div class="ease"></div>
+                    </div>
+
+            </div>
+        </div>
+        </form>
+        </div>
+
+
+</body>
+
+</html>
+
+
 </main>
 
 
 
-    <!------------FOOTER-------------->
-    
+<!------------FOOTER-------------->
+
 
 
 <!--
@@ -410,41 +392,41 @@
 Rewind
 </a> 
 -->
-     <footer id="socialmedia">
+<footer id="socialmedia">
     <a class="scrollup" id="scrollUp">
         <!--            <i class="fa fa-caret-up"></i>-->
         <img src="img/white-reel.svg" id="reelFoot" width="40px">
 
     </a>
 
-        <ul class="social-buttons">
-            <li id="twitterIconFoot"> <a href="https://twitter.com/movireelapp"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li id="facebookIconFoot"><a href="https://www.facebook.com/MoviReel-833116013477090/"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li id="instagramIconFoot"> <a href="https://www.instagram.com/movireel/"><i class="fa fa-instagram"></i>
+    <ul class="social-buttons">
+        <li id="twitterIconFoot"> <a href="https://twitter.com/movireelapp"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li id="facebookIconFoot"><a href="https://www.facebook.com/MoviReel-833116013477090/"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li id="instagramIconFoot"> <a href="https://www.instagram.com/movireel/"><i class="fa fa-instagram"></i>
 </a>
-            </li> 
-            <li id="terms"> <a href="https://www.instagram.com/movireel/">Terms</i>
+        </li>
+        <li id="terms"> <a href="https://www.instagram.com/movireel/">Terms</i>
 </a>
-            </li> 
-            <li id="privacy"> <a href="https://www.instagram.com/movireel/">Privacy
+        </li>
+        <li id="privacy"> <a href="https://www.instagram.com/movireel/">Privacy
 </a>
-            </li>  
-            <li id="privacy"> <a href="#openModal" class="noScroll">Contact
+        </li>
+        <li id="privacy"> <a href="#openModal" class="noScroll">Contact
 </a>
-            </li> 
-            <li id="privacy"> <a href="https://www.instagram.com/movireel/">Team
+        </li>
+        <li id="privacy"> <a href="https://www.instagram.com/movireel/">Team
 </a>
-            </li>
+        </li>
 
-        </ul>
-
-
-    </footer>
+    </ul>
 
 
-    <script src="js/main.js"></script>
+</footer>
+
+
+<script src="js/main.js"></script>
 </body>
 
 </html>

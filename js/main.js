@@ -15,27 +15,17 @@ $(document).ready(function () {
         return false;
     });
 
-    //Scroll to form
-//
-//    $(".jumper").click(function () {
-//        $('html, body').animate({
-//            scrollTop: $("#myDiv").offset().top
-//        }, 800);
-//        return false;
-//
-//    });
-
-    $(".downHead").click(function () {
-        $('html, body').animate({
-            scrollTop: $(".section1").offset().top
-        }, 800);
-        return false;
-
-    });
+    //    $(".downHead").click(function () {
+    //        $('html, body').animate({
+    //            scrollTop: $(".section1").offset().top
+    //        }, 800);
+    //        return false;
+    //
+    //    });
 
     $(".downIndex, .headerAppLogo").click(function () {
         $('html, body').animate({
-            scrollTop: $("#slides").offset().top
+            scrollTop: $("#OR").offset().top
         }, 800);
         return false;
 
@@ -65,44 +55,103 @@ $(document).ready(function () {
 
     });
 
+    $(".downOR").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#bgColorWhite").offset().top
+        }, 800);
+        return false;
+
+    });
+
+    $(".downCus").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#previewScroll").offset().top
+        }, 800);
+        return false;
+
+    });
+
+    $(".downPrev").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#slides").offset().top
+        }, 800);
+        return false;
+
+    });
+
 });
 
 
-$(".noScroll, .noScroll2").click(function(){
-  $("body").css("overflow","hidden");
+$(".noScroll, .noScroll2").click(function () {
+    $("body").css("overflow", "hidden");
 });
-$(".close").click(function(){
-  $("body").css("overflow","visible");
+$(".close").click(function () {
+    $("body").css("overflow", "visible");
 });
 
 
+$(function () {
+    setNavigation();
+});
 
-$(document).ready(function() {
-    $('#next, #prev, #scrollUp, .slides-pagination').click(function() {
+function setNavigation() {
+    var path = window.location.pathname;
+    path = path.replace(/\/$/, "");
+    path = decodeURIComponent(path);
+
+    $(".nav a").each(function () {
+        var href = $(this).attr('href');
+        if (path.substring(0, href.length) === href) {
+            $(this).closest('li').addClass('active');
+        }
+    });
+}
+
+
+
+
+
+$(document).ready(function () {
+    $('#next, #prev, #scrollUp, .slides-pagination, .downOR, .downPrev, .downCus').click(function () {
         $('#blueReel').toggleClass('rotated');
-//                $('#reelSliderBg').css("display","block");
+        //                $('#reelSliderBg').css("display","block");
 
     });
 });
 //
 
+//$(window).scroll(function() {
+//  
+//  // get the variable of how far we've scrolled from the top
+//  var offset = $(window).scrollTop();
+//	offset     = offset * 10;
+//
+//  // add css transform with the offset variable
+//  $('#blueReel').css({
+//    '-moz-transform': 'rotate(' + offset + 'deg)',
+//    '-webkit-transform': 'rotate(' + offset + 'deg)',
+//    '-o-transform': 'rotate(' + offset + 'deg)',
+//    '-ms-transform': 'rotate(' + offset + 'deg)',
+//    'transform': 'rotate(' + offset + 'deg)',
+//  });
+//  
+//});
 
+$('#next, #prev, .slides-pagination').click(function () {
+    document.getElementById('video1').pause();
+    document.getElementById('video2').pause();
+    document.getElementById('video3').pause();
+    document.getElementById('video4').pause();
 
-$('#next, #prev, .slides-pagination').click(function(){
-   document.getElementById('video1').pause();
-   document.getElementById('video2').pause();
-   document.getElementById('video3').pause();
-   document.getElementById('video4').pause();
-        
 });
 
 
 $('.video').click(function () {
-   if ($("#media-video").get(0).paused) {
-       $("#media-video").get(0).play();
-   } else {
-       $("#media-video").get(0).pause();
-  }
+    if ($("#media-video").get(0).paused) {
+        $("#media-video").get(0).play();
+    } else {
+        $("#media-video").get(0).pause();
+    }
 });
 
 

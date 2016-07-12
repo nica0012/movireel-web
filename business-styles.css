@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,700,500,300);
 /*@import url(https://fonts.googleapis.com/css?family=Rancho);*/
 
 html,
@@ -83,7 +83,8 @@ body {
 
 header {
     background-color: #dedede;
-    background-image: url(img/head-bg-business.jpg);
+/*    background-image: url(img/head-bg-business.jpg);*/
+    background-image: url(https://static.pexels.com/photos/1300/city-marketing-lights-night.jpg);
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -91,6 +92,7 @@ header {
     height: 100vh;
     max-height: 100vh;
     text-align: center;
+     box-shadow: 0 6px 30px 0 rgba(173, 173, 173, 0.2), 0 8px 12px 0 rgba(173, 173, 173, 0.01);
 }
 
 .contentContain {}
@@ -125,12 +127,20 @@ h1 {
     margin: 0 auto;
     text-align: center;
     text-shadow: 0px 0px 1px #000000;
+    font-family: 'Catamaran';
+    font-weight: 900;
+    margin-bottom: -15px;
 }
 
+strong{
+    color: #5a73ff;
+}
 .headContentBusiness h3 {
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 23px;
+        font-family: 'Catamaran';
+
     color: #ffffff;
     text-shadow: 0px 0px 1px #000000;
 }
@@ -205,6 +215,29 @@ h1 {
 
 
 /* MAIN ---------------------------------- */
+
+#getStartedBtnBusiness {
+    cursor: pointer;
+    width: 300px;
+    height: 70px;
+    color: white;
+    font-size: 23px;
+    background-color: rgba(51, 199, 95, 0.9);
+    border: 2px solid rgba(51, 199, 95, 0.9);
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    transition: .3s;
+    
+}
+
+#getStartedBtn:hover {
+    color: #ffffff;
+    background-color: #33c75f;
+    border: 2px solid #33c75f;
+    transition: .3s;
+}
+
 
 h2 {
     color: #fff;
@@ -283,6 +316,8 @@ p {
 #sec2 h2,
 #sec3 h2 {
     color: #5a73ff;
+        margin-bottom: 10px;
+
 }
 
 #sec1 h3,
@@ -342,7 +377,7 @@ p {
     left: 0;
     bottom: 0;
     right: auto;
-    text-align: center;
+    text-align: left;
 }
 
 #sec1 .sectionImageContents {
@@ -552,7 +587,8 @@ color: #fff;
         font-size: 22px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 26px;
+        text-align: left;
     }
     h3 {
         font-size: 20px;
@@ -564,7 +600,7 @@ color: #fff;
         width: 50%;
         height: 50%;
         margin-left: 33px;
-        text-align: right;
+/*        text-align: right;*/
     }
     #sec1 .sectionImageContents {
         width: 40%;
@@ -631,7 +667,7 @@ color: #fff;
         width: 50%;
         height: 50%;
         margin-left: 33px;
-        text-align: right;
+/*        text-align: right;*/
     }
     #sec1 .sectionImageContents {
         width: 40%;

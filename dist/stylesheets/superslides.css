@@ -48,12 +48,12 @@
 
 .slides-navigation a.prev {
     left: 15px;
-    font-size: 35px;
+    font-size: 27px;
 }
 
 .slides-navigation a.next {
     right: 15px;
-    font-size: 35px;
+    font-size: 27px;
 }
 
 .slides-pagination {
