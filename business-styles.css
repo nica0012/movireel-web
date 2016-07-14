@@ -83,8 +83,8 @@ body {
 
 header {
     background-color: #dedede;
-/*    background-image: url(img/head-bg-business.jpg);*/
-    background-image: url(https://static.pexels.com/photos/1300/city-marketing-lights-night.jpg);
+    background-image: url(img/head-bg-business.jpg);
+/*    background-image: url(https://static.pexels.com/photos/1300/city-marketing-lights-night.jpg);*/
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -126,7 +126,7 @@ h1 {
     color: #ffffff;
     margin: 0 auto;
     text-align: center;
-    text-shadow: 0px 0px 1px #000000;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     font-family: 'Catamaran';
     font-weight: 900;
     margin-bottom: -15px;

@@ -82,6 +82,37 @@ $(document).ready(function () {
 });
 
 
+jQuery(function($) {
+  
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.size() == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    // Check all animatables and animate them if necessary
+		$animatables.each(function(i) {
+       var $animatable = $(this);
+			if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+        $animatable.removeClass('animatable').addClass('animatedScroll');
+			}
+    });
+
+	};
+  
+  // Hook doAnimations on scroll, and trigger a scroll
+	$(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+});
+
+
 $(".noScroll, .noScroll2").click(function () {
     $("body").css("overflow", "hidden");
 });
@@ -120,22 +151,7 @@ $(document).ready(function () {
 });
 //
 
-//$(window).scroll(function() {
-//  
-//  // get the variable of how far we've scrolled from the top
-//  var offset = $(window).scrollTop();
-//	offset     = offset * 10;
-//
-//  // add css transform with the offset variable
-//  $('#blueReel').css({
-//    '-moz-transform': 'rotate(' + offset + 'deg)',
-//    '-webkit-transform': 'rotate(' + offset + 'deg)',
-//    '-o-transform': 'rotate(' + offset + 'deg)',
-//    '-ms-transform': 'rotate(' + offset + 'deg)',
-//    'transform': 'rotate(' + offset + 'deg)',
-//  });
-//  
-//});
+
 
 $('#next, #prev, .slides-pagination').click(function () {
     document.getElementById('video1').pause();
@@ -153,6 +169,7 @@ $('.video').click(function () {
         $("#media-video").get(0).pause();
     }
 });
+
 
 
 //TRACKING INFO//

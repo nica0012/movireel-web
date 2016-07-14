@@ -17,6 +17,11 @@ a3a4a4 - mid gray
                                         
  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+*{
+         font-family: 'Didact Gothic', 'Open Sans', sans-serif, arial;
+
+}
+
 *:focus {
     outline: none;
 }
@@ -90,13 +95,15 @@ a3a4a4 - mid gray
      margin: 0;
      height: 100%;
      background-color: #ffffff;   
-     font-family: 'Open Sans', sans-serif, arial;
+     font-family: 'Didact Gothic', 'Open Sans', sans-serif, arial;
+     
  }
  /* HEADER ---------------------------------- */
  
  header {
      background-color: #5a73ff;
      background-image: url(img/header-bg.svg);
+/*     background-image: url(https://images.unsplash.com/photo-1464986411762-a4275fbaf3f0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d4d16b01ecb6200a7031517d21ee7872);*/
      z-index: 100;
      position: relative;
      background-size: cover;
@@ -157,6 +164,170 @@ a3a4a4 - mid gray
     -webkit-animation: bounce 2s infinite 2s;
     animation: bounce 2s infinite 2s;
 }
+
+
+
+/*ANIMATABLE*/
+
+
+/* initially hide animatable objects */
+.animatable {
+  visibility: hidden;
+  -webkit-animation-play-state: paused;        
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+
+/* show objects being animated */
+.animatedScroll {
+  visibility: visible;
+  
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(.3);
+	}
+	50% {
+		-webkit-transform: scale(1.05);
+	}
+
+	70% {
+		-webkit-transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+	}
+}
+
+@-moz-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-moz-transform: scale(.3);
+	}
+
+	50% {
+		-moz-transform: scale(1.05);
+	}
+
+	70% {
+		-moz-transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: scale(1);
+	}
+}
+
+@-o-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-o-transform: scale(.3);
+	}
+
+	50% {
+		-o-transform: scale(1.05);
+	}
+
+	70% {
+		-o-transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: scale(1);
+	}
+}
+
+@keyframes bounceIn {
+	0% {
+		opacity: 0;
+		transform: scale(.3);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	70% {
+		transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 
 
 /* Scroll down indicator (bouncing) */
@@ -237,7 +408,8 @@ h1 {
     color: #fff;
     font-size: 22px;
     margin-bottom: 5px;
-    font-style: italic;
+/*    font-style: italic;*/
+    font-family: 'Didact Gothic';
 }
 
 .headerAppLogo {
@@ -263,7 +435,7 @@ h4 {
 }
 
 .soonAppStore {
-    width: 18%;
+    width: 15%;
 }
 
 .light {
@@ -290,7 +462,7 @@ h5 {
 
 p {
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif, arial;
+/*    font-family: 'Open Sans', sans-serif, arial;*/
 }
 
 img {
@@ -450,6 +622,9 @@ background-color: #f7f7f7;
 
 .video {
     width: 90%;
+-webkit-box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.54);
+-moz-box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.54);
+box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.54);
 }
 
 .reelSocial i {
@@ -475,19 +650,7 @@ background-color: #f7f7f7;
     color: #3b5998;
 }
 
-.rotating {
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    -o-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
-}
 
-.rotated {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
 
 
 /* NAV ---------------------------------- */
@@ -497,6 +660,7 @@ background-color: #f7f7f7;
     text-align: right;
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
+
     padding: 12px;
 }
 
@@ -552,6 +716,8 @@ background-color: #f7f7f7;
     font-family: 'Sintony', arial, sans-serif;
     font-weight: 400;
     cursor: pointer;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+
 }
 
 #contactLi {
@@ -793,13 +959,13 @@ main {
 }
 
 main h2 {
-    font-family: 'Open Sans', sans-serif, arial;
+    font-family: 'Didact Gothic', 'Open Sans', sans-serif, arial;
     color: #5a73ff;
     margin-bottom: 1rem;
 }
 
 main p {
-    font-family: 'Open Sans', sans-serif, arial;
+/*    font-family: 'Open Sans', sans-serif, arial;*/
     color: #535353;
 }
 
@@ -879,43 +1045,6 @@ main h4 {
     animation-fill-mode: both;
 }
 
-@-webkit-keyframes rollIn {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-100%) rotate(-120deg);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0px) rotate(0deg);
-    }
-}
-
-@keyframes rollIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%) rotate(-120deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0px) rotate(0deg);
-    }
-}
-
-.rollIn {
-    -webkit-animation-name: rollIn;
-    animation-name: rollIn;
-}
-
-@-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
 
 @keyframes fadeInUp {
     0% {
@@ -932,6 +1061,8 @@ main h4 {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
+
+
 
 
 #downloadBtn {
@@ -954,15 +1085,16 @@ main h4 {
   -webkit-box-shadow: 0px 2px 5px #8a8a8a;
   -moz-box-shadow: 0px 2px 5px #8a8a8a;
   box-shadow: 0px 2px 5px #8a8a8a;
-  font-size: 14px;
+  font-size: 15px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
     
 }
 
 #downloadBtn:hover {
-    background-color: #2fb757;
-    border: 2px solid #2cb254;
+    background-color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    color: rgba(51, 199, 95, 0.9); 
     transition: .3s;
 }
 
@@ -970,7 +1102,7 @@ main h4 {
 #downloadBtn:hover span {display:none
 }
 #downloadBtn:hover:before {
-    color: #ffffff;
+    color: #33c75f;
 content: "\f063";
 font-family: FontAwesome;
     font-size: 20px;
@@ -978,8 +1110,9 @@ text-decoration: none;
 transition: .6s
     
 }
-#downloadBtn:hover #downloadText{
-   color: #ff002d;
+#downloadText:before{
+   -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
 }
 
 
@@ -988,7 +1121,7 @@ transition: .6s
     width: 260px;
     height: 80px;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     background-color: rgba(51, 199, 95, 0.9);
     border: 2px solid rgba(51, 199, 95, 0.9);
     border-radius: 10px;
@@ -1031,6 +1164,8 @@ transition: .6s
     display: table-cell;
     vertical-align: middle;
 }
+
+
 
 
 /* FOOTER ---------------------------------- */
@@ -1132,7 +1267,21 @@ footer {
     display: table;
     text-align: center;
 }
+.rotating {
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
 
+.rotated {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    
+    
+}
 /* MEDIA ---------------------------------- */
 
 @media only screen and (min-width: 1400px) {
